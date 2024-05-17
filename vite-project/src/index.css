@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+
+    .icon-base {
+        @apply size-10 p-2 text-[#a8a8a8]
+    }
+
+    .icon-base:hover {
+        @apply bg-black/15 rounded-md text-[#121212]
+    }
+}
+
+@layer utilities {
+
+    .grid-border {
+        @apply border-[1px] border-gray-200 rounded-lg
+    }
+}
