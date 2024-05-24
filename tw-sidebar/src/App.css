@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+    .feature-card {
+        @apply border border-gray-300 px-10 rounded-xl py-4
+    }
+
+    .feature-card:hover {
+        @apply bg-blue-200 border-blue-400 shadow-lg shadow-blue-100
+    }
+
+    .input-field {
+        @apply py-[7px] border border-gray-300 rounded-lg outline-none px-2 lg:max-w-72 w-full text-[14px]
+    }
+
+    .input-field:focus {
+        @apply border-blue-500 ring-blue-200 ring-4
+    }
+
+    .input-field:hover {
+        @apply border-blue-500
+    }
+
+    .underline-animate {
+        @apply text-sm text-blue-900
+    }
+
+    .underline-animate::after {
+        @apply content-[""] bg-blue-300 w-0 h-[1px] absolute bottom-0 left-0 transition-all duration-300
+    }
+
+    .underline-animate::after:hover {
+        @apply w-full
+    }
+}
+
+@layer utilities {
+    .gradient-btn {
+        @apply bg-gradient-to-t to-[#0A66C2] from-[#064079] lg:w-[unset] w-full text-nowrap
+    }
+
+    .glass-nav {
+       @apply py-[12px] px-4 backdrop-filter backdrop-blur-xl bg-opacity-[.4] bg-white shadow-md ring-1 ring-blue-100 rounded-full
+    }
+}
+
+/* linear-gradient(to bottom, #0A66C2, #064079) */

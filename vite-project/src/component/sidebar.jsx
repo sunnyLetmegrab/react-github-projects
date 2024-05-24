@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaChevronDown } from 'react-icons/fa';
+import { FaAmazon, FaChevronDown } from 'react-icons/fa';
 
 export default function SideBar() {
 
@@ -15,12 +15,14 @@ export default function SideBar() {
 
     return (
 
-        <div className='pt-16 fixed top-0 left-0 z-20 w-60 border-[1px] border-gray-200 h-full bg-white overflow-auto'>
+        <div className='pt-16 fixed top-0 left-0 z-20 lg:w-60 sm:w-40 border-[1px] border-gray-200 h-full bg-white overflow-auto'>
             {items.map((e) => (
                 <div key={e.id} className='block px-4 py-6'>
-                    <div className='flex items-center justify-between'>
-                        <p className='block'>{e.title}</p>
-                        {(e.children.length>0) && <FaChevronDown className='block ml-auto' />}
+
+                    <div className='flex items-center gap-x-2'>
+                        <FaAmazon />
+                        <p className=' sm:block hidden'>{e.title}</p>
+                        {(e.children.length > 0) && <FaChevronDown className='sm:block hidden ml-auto' />}
                     </div>
 
                 </div>))}

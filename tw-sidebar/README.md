@@ -9,3 +9,5 @@ Currently, two official plugins are available:
 
 ps-supabase
  dvK1ZjhrESQrQa2c
+
+ https://mui.com/material-ui/getting-started/templates/landing-page/

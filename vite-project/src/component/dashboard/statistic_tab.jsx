@@ -6,7 +6,7 @@ export default function StatiticsTabs() {
 
 
     return (
-        <>
+        <div className='block'>
             <div className='relative'>
                 <div className=' top-0 left-0 right-0 bg-white sticky z-20  p-4'>
                     <h2 className='text-xl font-bold'  >
@@ -36,7 +36,7 @@ export default function StatiticsTabs() {
                 <ul>
                     {array.map((e, index) => (
                         <li key={index}>
-                            <div className='px-4 flex w-full items-center gap-x-4 py-4 border-b-[1px] border-b-gray-200'>
+                            <div className='px-4 flex w-full items-center gap-x-4 py-4 border-b-[1px]  border-b-gray-200'>
                                 <img className='size-10' src='https://flowbite-admin-dashboard.vercel.app/images/products/iphone.png' />
                                 <div className='block'>
                                     <p className='text-base font-semibold'>iPhone 14 Pro</p>
@@ -52,6 +52,6 @@ export default function StatiticsTabs() {
                 </ul>
             </div>
 
-        </>
+        </div>
     )
 }

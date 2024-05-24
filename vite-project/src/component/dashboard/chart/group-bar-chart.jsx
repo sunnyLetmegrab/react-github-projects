@@ -27,11 +27,15 @@ export default function GroupBarChart() {
             dataLabels: {
                 enabled: false,
             },
+            stroke: {
+                colors: ['transparent'],
+                width: 2,
+            },
             plotOptions: {
                 bar: {
                     borderRadius: 2,
-                    
                     borderRadiusApplication: 'end',
+
 
                 }
             },
@@ -44,6 +48,8 @@ export default function GroupBarChart() {
                         x: 1,
                         y: 23,
                         fillColor: '#1a56db',
+
+
 
                     },
                     {
