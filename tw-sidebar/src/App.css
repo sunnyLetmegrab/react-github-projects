@@ -35,6 +35,11 @@
     .underline-animate::after:hover {
         @apply w-full
     }
+    .testimonial-item{
+       @apply border border-gray-300 rounded-xl bg-gray-50 px-5 pt-5  grid gap-y-5 grid-rows-2
+    }
+
+    
 }
 
 @layer utilities {
@@ -43,8 +48,17 @@
     }
 
     .glass-nav {
-       @apply py-[12px] px-4 backdrop-filter backdrop-blur-xl bg-opacity-[.4] bg-white shadow-md ring-1 ring-blue-100 rounded-full
+        @apply  block py-[12px] px-4 backdrop-filter backdrop-blur-xl bg-opacity-[.4] bg-white shadow-md ring-1 ring-blue-100 rounded-full
+    }
+    .gradient-bg{
+
+    }
+
+    .gradient-bg:nth-child(2) {
+        @apply text-white bg-gradient-to-t to-[#021F3B] from-[#033363]
     }
 }
+
+
 
 /* linear-gradient(to bottom, #0A66C2, #064079) */

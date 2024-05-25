@@ -4,26 +4,26 @@ import UnderLineText from '../component/underline_text'
 
 export default function Footer() {
     return (
-        <section className='lg:max-w-container-padding mx-auto my-20'>
-            <div className='grid grid-cols-12'>
-                <div className='col-span-7 '>
+        <section className='lg:max-w-container-padding mx-auto my-20 px-10'>
+            <div className='grid sm:grid-cols-12 max-sm:mx-auto gap-10'>
+                <div className='sm:col-span-7  mx-auto '>
 
-                    <section className='block'>
+                    <section className='block '>
                         <h3 className='text-xl my-[4px] text-blue-500 font-semibold'>Sitemark</h3>
                         <p className='text-black text-[1rem] my-[4px] font-semibold'>Newsletter</p>
                         <p className='text-gray-500 text-[1rem] my-[4px]'>Subscribe to our newsletter for weekly updates and promotions.</p>
-                        <div className='flex gap-x-3 my-4'>
+                        <div className='flex lg:flex-row flex-col gap-3 my-4'>
                             <input className='input-field'
                                 placeholder='Please enter your email'
                             ></input>
-                            <button className='gradient-btn px-4 text-white font-semibold rounded-lg border border-[#2b2b2b] text-[13px]'>Subscribe</button>
+                            <button className='gradient-btn px-3 py-2 text-white font-semibold rounded-lg border border-[#2b2b2b] text-[13px]'>Subscribe</button>
                         </div>
 
                     </section>
 
 
                 </div>
-                <div className='col-span-5 ml-auto'>
+                <div className='sm:col-span-5 lg:ml-auto mx-auto'>
                     <div className='grid grid-cols-3 gap-x-20 '>
                         {footerOptions.map((e, index) => (
                             <div key={index}>
@@ -43,7 +43,7 @@ export default function Footer() {
             </div>
 
             <hr className='my-14'></hr>
-            <div className='flex my-10 '>
+            <div className='flex my-10'>
                 <div className='block'>
                     <div className='flex space-x-2'>
                         <UnderLineText content='Privacy policy' css='text-gray-700 text-md font-semibold' />

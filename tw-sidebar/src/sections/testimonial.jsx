@@ -3,11 +3,11 @@ import { testimonials } from '../constants/app_const'
 
 export default function Testimonials() {
     return (
-        <section id='testimonial-section'  className='lg:max-w-container-padding mx-auto py-20'>
+        <section id='testimonial-section' className='lg:max-w-container-padding mx-auto py-20 px-5'>
             <h2 className='text-center text-4xl font-semibold my-2'> Testimonials</h2>
             <p className='text-center max-w-3xl w-full mx-auto my-2'>See what our customers love about our products. Discover how we excel in efficiency, durability, and satisfaction. Join us for quality, innovation, and reliable support.</p>
-            <div className='grid grid-cols-3 gap-10 mt-10'>
-                {testimonials.map((e, index) => (<div key={index} className='border border-gray-300 rounded-xl bg-gray-50 px-5 pt-5  grid gap-y-5 grid-rows-2'>
+            <div className='grid lg:grid-cols-3 sm:grid-cols-2 max-sm:max-w-sm gap-10 mt-10  mx-auto'>
+                {testimonials.map((e, index) => (<div key={index} className='testimonial-item '>
 
                     <p className='row-span-2 text-slate-600 text-[14px] '>{e.content}</p>
                     <div className=' flex gap-5'>

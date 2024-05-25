@@ -3,6 +3,13 @@ import { faComputer, faMobile, faBook, faGear, faPenRuler, faWandSparkles, faHea
 
 
 
+var navigations = [{ id: 1, name: "Feature", viewId: 'feature-section' }
+    , { id: 2, name: "testimonial", viewId: 'testimonial-section' }
+    , { id: 3, name: "Highlight", viewId: 'highlight-section' }
+    , { id: 4, name: "Pricing", viewId: 'price-section' }
+    , { id: 1, name: "FAQ", viewId: "faq-section" }]
+
+
 
 var featureModel = {
     icon: "",
@@ -220,5 +227,5 @@ const highlightList = [
     },
 ]
 
-export { featureArray, featureModel, testimonials, highlightList, priceList, faqList, footerOptions };
+export { featureArray, featureModel, testimonials, highlightList, priceList, faqList, footerOptions,navigations };
 

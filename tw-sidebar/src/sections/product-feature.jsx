@@ -41,7 +41,7 @@ export default function ProductFeatures() {
                 </div>
             </div>
             <section className='border rounded-xl border-gray-300 p-5 h-0 lg:min-h-full min-h-96'>
-                {feature && <img src={feature.image} className='h-0 min-h-full w-full object-scale-down' />}
+                {feature && <img src={feature.image} className='h-0 min-h-full w-full object-scale-down aspect-square' />}
             </section>
         </section>
     )

@@ -4,11 +4,11 @@ import { highlightList } from '../constants/app_const'
 
 export default function ProductHighlight() {
     return (
-        <section id='highlight-section' className='bg-[#121212] py-20'>
+        <section id='highlight-section' className='bg-[#121212] py-20  px-5'>
             <div className='lg:max-w-container-padding mx-auto block'>
                 <h5 className='text-white font-semibold text-4xl text-center my-2'>Highlights</h5>
                 <p className='max-w-3xl mx-auto text-center text-gray-500 my-2'>Explore why our product stands out: adaptability, durability, user-friendly design, and innovation. Enjoy reliable customer support and precision in every detail.</p>
-                <div className='grid grid-cols-3 gap-5 my-10 '>
+                <div className='grid lg:grid-cols-3 sm:grid-cols-2 gap-5 my-10  max-sm:max-w-sm mx-auto'>
                     {highlightList.map((e) => (<div key={e.title}
                         className='block backdrop-opacity-95 backdrop-filter backdrop-blur-xl bg-opacity-[.04] bg-[#ffffff04] p-5 rounded-lg ring-1 ring-gray-800'>
                         <FontAwesomeIcon icon={e.icon} color='#FFFFFF9C'></FontAwesomeIcon>

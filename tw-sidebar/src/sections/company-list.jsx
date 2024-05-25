@@ -11,10 +11,10 @@ export default function CompanyList() {
   ]
   return (
     <>
-      <section className='blockmax-w-3xl mx-auto mt-24'>
+      <section className='block max-w-3xl mx-auto mt-24  '>
         <p className='text-center'>Trusted by the best companies</p>
       </section>
-      <div className='grid  md:grid-cols-6 sm:grid-cols-3  justify-center gap-10 sm:mx-20 mb-24'>
+      <div className='grid  md:grid-cols-6 sm:grid-cols-3 grid-cols-2  justify-center gap-10 sm:mx-20 mb-24'>
         {imagesCompany.map((e, index) => (
           <img className=' sm:min-h-16 opacity-[.5] size-24 self-center mx-auto'
             src={e.img} alt={e.alt} key={e.alt} />
