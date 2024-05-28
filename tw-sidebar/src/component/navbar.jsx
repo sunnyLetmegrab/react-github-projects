@@ -8,9 +8,9 @@ import { navigations } from '../constants/app_const';
 export default function NavBar({ drawer, onDrawerClick }) {
 
     return (
-        <div className='block fixed w-full top-5 mx-auto px-6'>
+        <div className='block fixed w-screen bg-red-100 top-5 mx-auto px-6'>
 
-            <div className='glass-nav max-w-container-padding  block mx-auto'>
+            <div className='glass-nav max-w-container-padding  mx-auto'>
                 <div className='flex items-center justify-between'>
                     <h6 className='text-xl text-blue-600 font-sans font-bold'>Sitemark</h6>
 

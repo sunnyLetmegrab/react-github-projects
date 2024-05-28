@@ -13,7 +13,7 @@ export default function Faqs() {
     return (
         <section id="faq-section" className='lg:max-w-container mx-auto block py-20 px-10'>
             <h2 className='font-semibold text-4xl text-center'>Frequently asked questions</h2>
-            <div className='border border-gray-300 rounded-xl block my-10 max-lg:w-[1200px] max-sm:max-w-3xl mx-auto'>
+            <div className='border border-gray-300 rounded-xl block my-10  mx-auto'>
                 {faqList.map((e, index) => (
                     <>
                         <div className='flex p-3 items-center hover:bg-gray-100 rounded-xl mx-3 my-3'
